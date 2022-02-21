@@ -1,0 +1,15 @@
+<%- include('header')-%>
+  <body>
+    <div class="container">
+     <ul>
+       <%report.forEach(result =>{ %>
+       <li>HABITAT: <%= result.habitat%></li>
+       <li>DATE OF SIGHTING:<%= result.date%></li>
+       <li>BEHAVIOUR:<%= result.behaviour%></li>
+       <li>APPEARANCE:<%= result.appearance%></li>
+       <li>FLOCK SIZE:<%= result.flock_size%></li>
+       <%})%>
+     </ul>
+    </div>
+  </body>
+</html>
